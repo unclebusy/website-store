@@ -1,6 +1,6 @@
 function Footer() {
   return (
-      <footer className="page-footer green lighten-3">
+      <footer className="page-footer green darken-3">
         <div className="footer-copyright">
           <div className="container">
             © 2014 All rights reserved

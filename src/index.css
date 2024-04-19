@@ -7,13 +7,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.content {
+  margin-top: 64px;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
-
-nav {
-  padding: 0 1rem;
 }
 
 .content {
@@ -130,3 +130,11 @@ nav {
 .toast {
   background-color: green;
 }
+
+nav {
+  position: fixed;
+  top: 0;
+  padding: 0 1rem;
+  z-index: 10;
+}
+

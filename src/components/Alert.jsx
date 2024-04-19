@@ -1,20 +1,23 @@
-import { useEffect } from "react";
+import {ShopContext} from "../context";
+import { useEffect, useContext } from "react";
 
-function Alert(props) {
-  const { name = '', closeAlert = Function.prototype } = props;
+function Alert() {
+  const { alertName, closeAlert } = useContext(ShopContext);
 
   useEffect(() => {
-    const timerId = setTimeout(closeAlert, 3000);
+    if (alertName) {
+      const timerId = setTimeout(closeAlert, 3000);
 
-    return () => {
-      clearTimeout(timerId)
+      return () => {
+        clearTimeout(timerId)
+      }
     }
-  }, [name]);
+  }, [alertName, closeAlert]);
 
   return (
       <div className="toast-container">
         <div className="toast">
-          {name} add to cart!
+          {alertName} add to cart!
         </div>
       </div>
   )
