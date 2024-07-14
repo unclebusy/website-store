@@ -2,7 +2,7 @@
 An e-commerce website built with React that implements product browsing and purchasing functionality
 
 ## Use stack
-React, React Router, Redux, Axios, Material-UI, Formik, Yup, Stripe, Jest, React Testing Library, ESLint, Prettier, Husky, Lodash, Firebase.
+CSS, JS, React, Redux, Axios, Material-UI, ESLint, Prettier, Husky, Lodash
 
 ## Installation
 ```sh
