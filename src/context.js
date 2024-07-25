@@ -9,42 +9,51 @@ const initialState = {
   order: [],
   isBasketShow: false,
   alertName: '',
-}
+};
 
-export const ContextProvider = ({children}) => {
+export const ContextProvider = ({ children }) => {
   const [value, dispatch] = useReducer(reducer, initialState);
 
-  const closeAlert = (item) => {
-    dispatch({type: 'CLOSE_ALERT'})
-  }
+  const closeAlert = () => {
+    dispatch({ type: 'CLOSE_ALERT' });
+  };
 
   const addToBasket = (item) => {
-    dispatch({type: 'ADD_TO_BASKET', payload: item})
-  }
+    dispatch({ type: 'ADD_TO_BASKET', payload: item });
+  };
 
   const removeFromBasket = (itemId) => {
-    dispatch({type: 'REMOVE_FROM_BASKET', payload: {id: itemId}})
-  }
+    dispatch({ type: 'REMOVE_FROM_BASKET', payload: { id: itemId } });
+  };
 
   const incrementQuantity = (itemId) => {
-    dispatch({type: 'INCREMENT_QUANTITY', payload: {id: itemId}})
-  }
+    dispatch({ type: 'INCREMENT_QUANTITY', payload: { id: itemId } });
+  };
 
   const decrementQuantity = (itemId) => {
-    dispatch({type: 'DECREMENT_QUANTITY', payload: {id: itemId}})
-  }
+    dispatch({ type: 'DECREMENT_QUANTITY', payload: { id: itemId } });
+  };
 
   const handleBasketShow = () => {
-    dispatch({type: 'TOGGLE_BASKET'})
-  }
+    dispatch({ type: 'TOGGLE_BASKET' });
+  };
 
   const setGoods = (data) => {
-    dispatch({type: 'SET_GOODS', payload: data})
-  }
+    dispatch({ type: 'SET_GOODS', payload: data });
+  };
 
   return (
-      <ShopContext.Provider value={{...value, closeAlert, addToBasket, removeFromBasket, incrementQuantity, decrementQuantity, handleBasketShow, setGoods}}>
+      <ShopContext.Provider value={{
+        ...value,
+        closeAlert,
+        addToBasket,
+        removeFromBasket,
+        incrementQuantity,
+        decrementQuantity,
+        handleBasketShow,
+        setGoods
+      }}>
         {children}
       </ShopContext.Provider>
-  )
-}
+  );
+};
