@@ -17,12 +17,13 @@ This project is a simple e-commerce website built with React. It features a shop
 
 ## Technology Stack
 
-- **React**: JavaScript library for building user interfaces
-- **Context API**: For state management
-- **Fetch API**: For making API requests
-- **Materialize CSS**: For UI components and styling
-- **JavaScript (ES6+)**: Core programming language used
-- **HTML5 & CSS3**: Markup and styling
+- React
+- Redux
+- Context API
+- Fetch API
+- Materialize CSS
+- JavaScript (ES6+)
+- HTML5 & CSS3
 
 ## Installation
 
