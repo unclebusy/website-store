@@ -1,4 +1,4 @@
-import {ShopContext} from "../context";
+import { ShopContext } from "../context";
 import { useEffect, useContext } from "react";
 
 function Alert() {
@@ -9,18 +9,18 @@ function Alert() {
       const timerId = setTimeout(closeAlert, 3000);
 
       return () => {
-        clearTimeout(timerId)
-      }
+        clearTimeout(timerId);
+      };
     }
   }, [alertName, closeAlert]);
 
   return (
       <div className="toast-container">
         <div className="toast">
-          {alertName} add to cart!
+          {alertName} добавлен в корзину!
         </div>
       </div>
-  )
+  );
 }
 
 export default Alert;

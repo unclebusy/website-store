@@ -1,4 +1,4 @@
-const API_KEY = process.env.REACT_APP_API_KEY;
+const API_KEY = 'b48248e9-c2de5b4f-8574023e-81aa6433';
 
 const API_URL ='https://fortniteapi.io/v2/shop?lang=en';
 

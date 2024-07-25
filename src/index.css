@@ -59,6 +59,10 @@ code {
 }
 
 @media (min-width: 1400px) {
+  .brand-logo {
+    margin-left: 1rem;
+  }
+
   .cart {
     top: 6.5rem;
     right: 1rem;
@@ -161,4 +165,3 @@ code {
   transform: translateY(100%);
   opacity: 0;
 }
-

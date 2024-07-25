@@ -1,23 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import useScrollHide from "../hooks/useScrollHide";
 
 function Header() {
-  const [isHidden, setIsHidden] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setIsHidden(true);
-      } else {
-        setIsHidden(false);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+  const isHidden = useScrollHide();
 
   return (
       <nav className={`page-header green darken-3 ${isHidden ? 'hide' : ''}`}>
@@ -31,4 +16,4 @@ function Header() {
   );
 }
 
-export default Header
+export default Header;
