@@ -1,8 +1,10 @@
 # Website Shop
 
-This project is a simple e-commerce website built with React. It features a shopping cart, product list, and various components to manage the shop's functionalities.
-
 <img src="https://i.ibb.co/rZXsRDp/My-Collages-1.jpg" alt="Website Img" height="300">
+
+## Description
+
+This project is a simple e-commerce website built with React. It features a shopping cart, product list, and various components to manage the shop's functionalities.
 
 ## Features
 
