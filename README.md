@@ -18,11 +18,13 @@ This project is a simple e-commerce website built with React. It features a shop
 
 - React
 - Redux
+- JavaScript (ES6+)
+- HTML5
+- CSS3
 - Context API
 - Fetch API
 - Materialize CSS
-- JavaScript (ES6+)
-- HTML5 & CSS3
+
 
 ## Installation
 
